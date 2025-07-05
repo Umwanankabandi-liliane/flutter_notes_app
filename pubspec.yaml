@@ -1,0 +1,33 @@
+name: notes_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"  # ✅ Updated for modern Flutter
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ✅ Updated Firebase packages (July 2025)
+  firebase_core: ^3.15.1
+  firebase_auth: ^5.6.2
+  cloud_firestore: ^5.6.11
+
+  # ✅ Updated state management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.5
+
+  # UI
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3  # ✅ Modern lint rules
+
+flutter:
+  uses-material-design: true
