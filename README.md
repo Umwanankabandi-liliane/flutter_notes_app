@@ -1,16 +1,51 @@
-# mynotes_app
+# Flutter Notes App
 
-A new Flutter project.
+A mini Flutter mobile app that allows users to sign up, log in, and manage notes using Firebase.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+* Firebase Authentication (Email & Password)
+* Cloud Firestore for storing user notes
+* Full CRUD operations (Create, Read, Update, Delete)
+* Clean architecture (Data, Domain, Presentation layers)
+* State management using Cubit (flutter\_bloc)
+* Snackbar feedback and loading indicators
 
-A few resources to get you started if this is your first Flutter project:
+## Folder Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+* `lib/data`: Firebase and repository logic
+* `lib/domain`: Service interfaces
+* `lib/presentation`: UI, screens, and Cubits
+* `lib/utils`: Helpers like snackbar utilities and dialogs
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How to Run
+
+1. Clone the repo:
+   `git clone https://github.com/Umwanankabandi-liliane/flutter_notes_app.git`
+
+2. Navigate to the project folder:
+   `cd flutter_notes_app`
+
+3. Install dependencies:
+   `flutter pub get`
+
+4. Add your `google-services.json` file to `android/app`
+
+5. Link Firebase:
+   `flutterfire configure`
+
+6. Run the app:
+   `flutter run`
+
+## Requirements
+
+* Dart SDK compatible with the current dependencies
+* Firebase project with Authentication and Firestore enabled
+* Android emulator or device with minSdkVersion set to 23
+
+## Note
+
+Make sure to configure Firebase correctly. The `google-services.json` file must be placed inside `android/app`. This file is excluded from the repository for security reasons.
+
+
+
